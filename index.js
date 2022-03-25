@@ -235,11 +235,24 @@ CuboidMaker.prototype.surfaceArea = function () {
  
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
-//Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
+//Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the 
+//new keyword to use our CuboidMakerTwo class.
  
 class CuboidMakerTwo{
-
+  constructor(dimensions){
+    this.length = dimensions.length;
+    this.height = dimensions.height;
+    this.width = dimensions.width;
+  }
+  volume (){
+    return this.height * this.length * this.width;
+  }
+  surfaceArea () {
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
+  }
 }
+
+
 
 
 
