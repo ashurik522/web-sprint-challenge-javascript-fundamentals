@@ -51,7 +51,7 @@ A closure is a function that references variables in the outer scope from its in
 
 5. Why do we need super() in an extended class?
 
-Super essentail replaces .call to create and explicit binding which invokes the parent constructors arguments.
+Super essentaily replaces .call to create and explicit binding which invokes the parent constructors arguments.
 
 
 
